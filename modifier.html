@@ -3,7 +3,6 @@ let url = window.location.href;
 replaceHash = url.replace("#\&", "?");
 const queryString = replaceHash;
 const urlParams = new URLSearchParams(queryString);
-mod2 = mod.replace("ashrafabdelrazik.github.io/poc/modifier.html",
- urlParams.get('n'));
-alert(mod2);
+replaceHost = replaceHash.replace("ashrafabdelrazik.github.io/poc/modifier.html", urlParams.get('n'));
+alert(replaceHost);
 </script>
